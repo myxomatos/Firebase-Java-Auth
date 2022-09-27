@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_theme_light_primaryContainer"
+    >
+
+    <Button
+        android:id="@+id/btnBckfReg"
+        style="?attr/materialButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/md_theme_light_secondary"
+        android:text="Back"
+        android:textColor="@color/md_theme_light_onSecondary" />
+
+    <TextView
+        android:id="@+id/loginscrn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Register"
+        android:textSize="25dp"
+        android:textColor="@color/md_theme_light_onBackground"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/fstTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/md_theme_light_onBackground"
+        android:text="Full Name"/>
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:textColor="@color/md_theme_light_onBackground"
+        android:ems="10"/>
+    <TextView
+        android:id="@+id/secTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="@color/md_theme_light_onBackground"
+        android:layout_marginLeft="100dp" />
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:textColor="@color/md_theme_light_onBackground"
+        android:ems="10" />
+    <TextView
+        android:id="@+id/thirdTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="@color/md_theme_light_onBackground"
+        android:layout_marginLeft="100dp" />
+    <EditText
+        android:id="@+id/txtPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:inputType="textPassword"
+        android:textColor="@color/md_theme_light_onBackground"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/btnSignin"
+        style="?attr/materialButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="160dp"
+
+        android:backgroundTint="@color/md_theme_light_tertiaryContainer"
+        android:textColor="@color/md_theme_light_onTertiaryContainer"
+        android:text="Signin" />
+
+    <TextView android:id="@+id/lnkLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Already Registered? Login here"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/md_theme_light_onBackground"
+
+
+        android:onClick="test"/>
+</LinearLayout>

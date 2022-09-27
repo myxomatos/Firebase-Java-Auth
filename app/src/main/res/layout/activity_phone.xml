@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_theme_light_primaryContainer"
+    tools:context=".Phone">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btnBckfPhone"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="130dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/md_theme_light_secondary"
+            android:text="Back"
+            android:textColor="@color/md_theme_light_onSecondary" />
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="90dp"
+            android:src="@drawable/sendmail"
+            android:id="@+id/img_send_otp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="OTP verification"
+            android:textSize="20sp"
+            android:textColor="@color/md_theme_light_onBackground"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="50dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:text="We will send you an one time OTP on this given mobile number"
+            android:textColor="@color/md_theme_light_onBackground"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:text="Enter mobile number"
+            android:textColor="@color/md_theme_light_onBackground"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="+52"
+                android:textColor="@color/md_theme_light_onSecondary"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/input_mob_no"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:layout_marginLeft="10dp"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textColor="@color/md_theme_light_onSecondary"
+                android:textSize="16sp"
+                android:hint="1234567890"
+                android:textStyle="bold"/>
+
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:text="Send OTP"
+                android:id="@+id/btnsend"
+                android:layout_margin="30dp"
+                android:backgroundTint="@color/md_theme_light_tertiaryContainer"
+                android:textColor="@color/md_theme_light_onTertiaryContainer"
+                android:textStyle="bold"/>
+
+            <ProgressBar
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:id="@+id/probar1"/>
+
+
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>
